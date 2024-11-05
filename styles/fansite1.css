@@ -18,15 +18,23 @@ header {
     color: #fff;
     padding: 10px;
     position: relative;
+    
 }
 
 header h1 {
     margin-bottom: 10px;
+    
+    color: #268185;
+    text-align: center;
+
 }
 
 /* Hide checkbox by default */
 .menu-toggle {
-    display: none; 
+    display: hidden; 
+}
+input#menu-toggle {
+    display: none;
 }
 
 /* Show menu and menu icon when screen width is less than 768px */

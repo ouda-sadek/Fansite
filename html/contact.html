@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nass">
+    <link rel="stylesheet" href="../styles/fansite1.css">
+    <title>Fansite1</title>
+</head>
+<body>
+    <header>
+        <h1>Sir Tim Berners-Lee</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav id="navbar">
+            <ul>
+                 <li><a href="fansite1.html">Fansite1</a></li>
+                <li><a href="fansite2.html">Fansite2</a></li>
+                <li><a href="fansite3.html">Fansite3</a></li>
+                <li><a href="intro.html">Home</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <main>
+        <section class="contact-form">
+            <h2>Formulaire de Contact</h2>
+            <p>Veuillez remplir le formulaire ci-dessous pour nous contacter. Nous reviendrons vers vous dans les plus brefs délais.</p>
+
+            <form action="#" method="post">
+                
+                <!-- Civilité -->
+                <label for="civilite">Civilité :</label>
+                <select id="civilite" name="civilite" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="mr">Monsieur</option>
+                    <option value="mme">Madame</option>
+                    <option value="mlle">Mademoiselle</option>
+                </select>
+                
+                <!-- Nom et Prénom -->
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <!-- Adresse postale -->
+                <label for="adresse">Adresse postale :</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <!-- Politique de confidentialité -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    <label for="confidentialite">J'accepte la politique de confidentialité de l'entreprise</label>
+                </div>
+
+                <!-- Bouton de validation -->
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+</html> 
+</body>
+</html>
