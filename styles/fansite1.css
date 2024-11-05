@@ -1,0 +1,148 @@
+/* Mobile First */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #5cb85c;
+}
+
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Hide checkbox by default */
+.menu-toggle {
+    display: none; 
+}
+
+/* Show menu and menu icon when screen width is less than 768px */
+/* Hide default menu icon*/
+.menu-icon {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Styles pour le menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main style */
+main {
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4cae4c;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* show checkbox on mobile */
+    }
+
+    .menu-icon {
+        display: block; /* Show the burger menu icon on mobile */
+    }
+
+    nav {
+        display: none; /* Hide the default menu on mobile */
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex; /* show menu when box is checked*/
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Shows the menu when the box is checked */
+    #menu-toggle:checked + .menu-icon + nav {
+        display: flex;
+    }
+}
+
+/* Media Queries for Big Screens */
+@media (min-width: 601px) {
+    .menu-toggle {
+        display: none; /* Hide checkbox on large screens */
+    }
+
+    nav {
+        display: flex; /* View online menu*/
+    }
+
+    nav ul {
+        flex-direction: row; /* AHorizontal alignment */
+    }
+}
