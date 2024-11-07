@@ -2,9 +2,9 @@
 body {
    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /*margin: 0;*/
+    margin: 0;
     padding: 0;
-    background-image: url(../images/fansite3/background.jpg);
+    background-image: url(../images/fansite3/background.jpg)
 }
 /*menu*/
 nav ul {
@@ -38,6 +38,7 @@ main{
     
     flex-direction: column;
 }
+/*logo*/
 .container{
     padding-bottom: 0%;
     padding-top: 20%;
@@ -58,19 +59,17 @@ main{
 
 
 section h2{
-    
-    font-size: 2em; /* Taille du texte */
-    color: #2c3e50; /* Couleur pour se démarquer */
-    margin-bottom: 20px;
-    border-bottom: 3px solid #00246B;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    background-image: url(../images/fansite3/wave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px gray;
+    color: white;
+    text-shadow: 2px 2px 10px;
+    text-align: center;
     text-transform: uppercase; /* Texte en majuscules */
     letter-spacing: 2px; /* Espacement entre les lettres */
-    background: linear-gradient(90deg, #3498db, #2ecc71);
-    -webkit-background-clip: text;
-    color: transparent;
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.5s ease-out forwards;
@@ -104,10 +103,10 @@ p {
 
 @keyframes fadeIn {
     from { opacity: 0; }
-    to { opacity: 1; }
+    to { opacity: 0.85; }
 }
 
-
+/* actress photos*/
 .photo-gallery {
     display: flex; 
     flex-direction: colunm;
@@ -120,15 +119,14 @@ section{
     padding: 20px 20px;
 }
 
-.photo {
-    
+.photo  {
+     
     display: flex;
     justify-content: center;
     
     margin: 10px 10px;
     width: 250px; /* Image occupe toute la largeur de l'espace */
-    /*border: 1px solid black;*/
-  /* background-color: rgba(0, 0,0 , 0.5);*/
+   
 }
 .photo img {
     
@@ -140,7 +138,7 @@ section{
     
 }
 
-/*css for films*/
+/* films photos*/
 .film-photo {
     padding: 40px 20px;
    
@@ -164,7 +162,7 @@ section{
     padding: 20px;
 }
 
-.film img {
+.film img{
     border-radius: 10%;
     margin-bottom: 15px;
     height: 260px;
@@ -185,7 +183,7 @@ section{
     color: #666;
 }
 
-
+/*links */
 .link ul a{
     position: relative;
     
