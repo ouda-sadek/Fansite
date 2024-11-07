@@ -9,30 +9,32 @@ h2 {
   text-align: center;
   height: 100%;
   background-image: url(../images/fansite2/wave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+
+  border-radius: 50px;
 }
 
 #main_img {
-  display: flex;
-  justify-content: center;
-
   height: 100vh;
 
   background-image: url(../images/fansite2/yuki-big.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  aspect-ratio: auto;
-  mix-blend-mode: darken;
-  transition: backbround-color 3s;
 }
 
 #main_img div {
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
+
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s ease;
 }
 
-#main_img img:hover {
-  mix-blend-mode: darken;
+#main_img div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
 }
 
 #introduction {
@@ -51,6 +53,7 @@ h2 {
   width: 250px;
 
   margin: 1%;
+  object-fit: cover;
 }
 
 #introduction div {
@@ -72,15 +75,9 @@ h2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), white);
 }
 
-#best_work div {
+#best_work > div {
   display: flex;
   flex-direction: row;
-}
-
-#best_work img {
-  height: 200px;
-
-  margin: 1%;
 }
 
 #best_work p {
@@ -88,15 +85,66 @@ h2 {
   min-width: 40%;
 }
 
+.best_media_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.best_media_div img {
+  height: 200px;
+
+  object-fit: cover;
+  aspect-ratio: 1/1;
+
+  margin: 1%;
+}
+
+.best_media_div img:hover {
+  filter: brightness(0.5);
+}
+
+.best_media_div audio {
+  height: 40px;
+  width: 200px;
+}
+
 #media_list {
   display: flex;
+  justify-content: space-between;
   overflow: scroll;
 
   background-color: gray;
 }
 
-#media_list * {
-  padding: 2%;
+.media_cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+
+  height: 200px;
+  width: 200px;
+
+  background-image: url(../images/fansite2/yuki.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.media_cover svg {
+  fill: white;
+  stroke: white;
+  stroke-width: 1;
+
+  visibility: hidden;
+}
+
+.media_cover:hover {
+  opacity: 0.5;
+}
+
+.media_cover:hover svg {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 700px) {
@@ -113,7 +161,7 @@ h2 {
     justify-content: space-around;
   }
 
-  #best_work div {
+  #best_work > div {
     flex-direction: row;
   }
 }
