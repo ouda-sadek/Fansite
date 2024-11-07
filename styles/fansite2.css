@@ -1,0 +1,119 @@
+body {
+  background-color: beige;
+}
+
+h1,
+h2 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  height: 100%;
+  background-image: url(../images/fansite2/wave.jpg);
+}
+
+#main_img {
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+
+  background-image: url(../images/fansite2/yuki-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  aspect-ratio: auto;
+  mix-blend-mode: darken;
+  transition: backbround-color 3s;
+}
+
+#main_img div {
+  height: 100%;
+  width: 100%;
+}
+
+#main_img img:hover {
+  mix-blend-mode: darken;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-image: linear-gradient(white, rgba(0, 0, 0, 0.5));
+}
+
+#introduction img {
+  height: 250px;
+  width: 250px;
+
+  margin: 1%;
+}
+
+#introduction div {
+  display: flex;
+  flex-direction: column;
+}
+
+#introduction p {
+  margin-left: 2%;
+  min-width: 60%;
+}
+
+#best_work {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), white);
+}
+
+#best_work div {
+  display: flex;
+  flex-direction: row;
+}
+
+#best_work img {
+  height: 200px;
+
+  margin: 1%;
+}
+
+#best_work p {
+  margin-left: 2%;
+  min-width: 40%;
+}
+
+#media_list {
+  display: flex;
+  overflow: scroll;
+
+  background-color: gray;
+}
+
+#media_list * {
+  padding: 2%;
+}
+
+@media only screen and (min-width: 700px) {
+  #introduction {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #introduction p {
+    max-width: 80%;
+  }
+
+  #best_work {
+    justify-content: space-around;
+  }
+
+  #best_work div {
+    flex-direction: row;
+  }
+}
