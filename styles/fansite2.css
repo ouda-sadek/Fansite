@@ -3,7 +3,8 @@ body {
   margin: 0;
 }
 
-/*#snow {
+/*
+#snow {
   background: none;
   font-family: Androgyne;
   background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
@@ -134,12 +135,6 @@ li {
   margin-left: 2%;
   min-width: 60%;
 }
-
-/*
-#news ul {
-  list-style-image: url(../images/fansite2/news.gif);
-}
-*/
 
 #best_work {
   display: flex;
