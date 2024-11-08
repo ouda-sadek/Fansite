@@ -79,19 +79,20 @@ ul {
 li {
   padding: 1%;
   margin: 1%;
+  border-radius: 10px;
 
   font-size: 22px;
 }
 
 #news li {
-  border-left: 5px solid red;
-  box-shadow: -4px 0 10px 5px lightcoral;
-  background-color: rgba(255, 235, 235, 0.85);
+  border-left: 5px solid blue;
+  box-shadow: -4px 0 10px 5px lightblue;
+  background-color: rgba(235, 235, 255, 0.85);
 }
 
 #realisations li {
-  border-left: 5px solid green;
-  background-color: rgba(235, 255, 235, 0.85);
+  border-left: 5px solid blue;
+  background-color: rgba(235, 235, 255, 0.85);
 }
 @keyframes fadeIn {
   from {
