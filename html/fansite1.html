@@ -5,25 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nass">
     <link rel="stylesheet" href="../styles/fansite1.css">
+    
     <title>Fansite1</title>
 </head>
 <body>
     <header>
-        <h1>FANSITE</h1>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Case à cocher pour le menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      
+        <!-- Icône du menu burger (visible sur mobile) -->
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav id="navbar">
-            <ul>
-                 <li><a href="#news">News</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#photos-videos">Photos and Videos</a></li>
-                <li><a href="#links">Links</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="contact.html">Form</a></li>
-            </ul>
+      
+        <!-- Menu de navigation -->
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <!-- Sous-menu "dropdown" pour Tim Berners-Lee -->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Tim Berners-Lee</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite1.html">Home</a></li>
+                        <li><a href="fansite1.html#news">News</a></li>
+                        <li><a href="fansite1.html#achievements">Achievements</a></li>
+                        <li><a href="fansite1.html#events">Events</a></li>
+                        <li><a href="fansite1.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite1.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <!-- Sous-menu "dropdown" pour Blake Lively-->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Blake Lively</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite2.html">Home</a></li>
+                        <li><a href="fansite2.html">News</a></li>
+                        <li><a href="fansite2.html#achievements">Achievements</a></li>
+                        <li><a href="fansite2.html#events">Events</a></li>
+                        <li><a href="fansite2.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite2.html#links">Links</a></li>
+                    </ul>
+                </details>
+              </li>
+            <!-- Sous-menu "dropdown" pour Fansite3-->
+            <li> 
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Fansite3</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite3.html">Home</a></li>
+                        <li><a href="fansite3.html">News</a></li>
+                        <li><a href="fansite3.html#achievements">Achievements</a></li>
+                        <li><a href="fansite3.html#events">Events</a></li>
+                        <li><a href="fansite3.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite3.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
+        <!-- Search-->
+        <div class="search-container">
+            <button class="search-icon">&#128269;</button> <!-- Icône de loupe -->
+            <input type="text" placeholder="Rechercher..." id="search-input" class="search-input">
+        </div>
     </header>
+
     <main>
         <section id="biography">
             <h2>Biography</h2>
@@ -66,31 +114,28 @@
             <p>Sir Tim Berners-Lee has made many useful links to other websites.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact form</h2>
-            <form>
-                <label for="name">Name :</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+       
     </main>
 
     <footer>
-        <p>&copy; 2022 Sir Tim Berners-Lee. All rights reserved.</p>
+        
+    <ul class="footer-menu">
+        <li>
+            <a href="#menuprincipal">Menu Principal</a>
+            <!-- Menu déroulant -->
+            <div class="dropdown">
+                <a href="fansite1.html">Tim Berners-Lee</a>
+                <a href="fansite2.html">Blake Lively</a>
+                <a href="fansite3.html">Fansite3</a>
+                
+            </div>
+        </li>
+        <li><li><a href="contact.html">Contact</a></li></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+        <p>Designed by Nass, Dina and Jeremy</p>
+        <p>&copy; 2024 FANSITE. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-
