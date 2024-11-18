@@ -1,8 +1,9 @@
 body {
   background-image: url(../images/fansite2/background.jpg);
   margin: 0;
-}
 
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
 /* Optional snow effect
 
@@ -50,7 +51,7 @@ h2 {
   height: 100%;
   opacity: 1;
   text-shadow: 5px black;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 h3 {
@@ -59,15 +60,21 @@ h3 {
   text-shadow: 0 0 10px lightgray, 0 0 15px gray;
 }
 
-p {
-  border-left: 5px solid black;
-  border-radius: 5px;
+p,
+li {
+  font-size: 18px; /* Augmente la taille de la police */
+  line-height: 1.6; /* Espacement entre les lignes */
+  color: #555; /* Couleur de texte douce */
   box-shadow: -5px 0 10px 0 black;
-  padding: 2%;
 
-  font-size: 22px;
+  margin: 10px 30px 0 0;
+  padding: 15px;
+  border-left: 5px solid #00246b; /* Bordure gauche colorée */
+  border-radius: 5px; /* Coins arrondis */
 
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: #f4f2f3; /* Fond clair */
+
+  box-shadow: -5px 0 10px 0 black;
 
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
@@ -75,16 +82,6 @@ p {
 
 ul {
   list-style-type: none;
-}
-
-li {
-  padding: 1%;
-  margin: 1%;
-  border-radius: 10px;
-
-  font-size: 22px;
-  border-left: 5px solid blue;
-  background-color: rgba(235, 235, 255, 0.85);
 }
 
 #news li {
@@ -107,6 +104,7 @@ li {
   background-image: url(../images/fansite2/yuki-big.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: -150px;
 
   box-shadow: 4px 4px 20px black, -4px -4px 20px black;
 }
@@ -136,7 +134,7 @@ li {
 #introduction img {
   height: 250px;
   width: 250px;
-  border: 3px solid beige;
+  border-radius: 25px;
 
   margin: 1%;
   object-fit: cover;
@@ -194,6 +192,17 @@ li {
   width: inherit;
 }
 
+#realisations ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#realisations li {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
 #media_list {
   display: flex;
   justify-content: space-between;
@@ -212,7 +221,7 @@ li {
   width: 200px;
 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .media_cover:nth-child(1) {
@@ -265,6 +274,11 @@ li {
 }
 
 @media only screen and (min-width: 700px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+
   #introduction {
     flex-direction: row;
     justify-content: space-between;
@@ -274,11 +288,20 @@ li {
     max-width: 80%;
   }
 
+  #main_img {
+    background-size: cover;
+    background-position-x: 0;
+  }
+
   #best_work {
     justify-content: space-around;
   }
 
   #best_work > div {
     flex-direction: row;
+  }
+
+  #realisation li {
+    flex-basis: 100%;
   }
 }
