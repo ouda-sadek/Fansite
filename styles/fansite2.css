@@ -99,15 +99,8 @@ main li {
     opacity: 0;
   }
 
-  h1,
-  h2 {
-    color: white;
-    text-shadow: 5px 5px 10px 5px black;
-    text-align: center;
-    height: 100%;
-    opacity: 1;
-    text-shadow: 5px black;
-    font-size: 40px;
+  to {
+    opacity: 0.85;
   }
 }
 
