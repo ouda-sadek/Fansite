@@ -222,7 +222,7 @@ section{
 @media (min-width: 1024px) {
     /* Styles pour les ordinateurs de bureau */
     main {
-        max-width: 1000px;
+      max-width: 1000px;
         margin: 0 auto;
     }
 
