@@ -1,284 +1,576 @@
 body {
-    background-image: url(../images/fansite2/background.jpg);
-    margin: 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Optional snow effect
+
+#snow {
+  background: none;
+  font-family: Androgyne;
+  background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  animation: snow 10s linear infinite;
+  opacity: 50%;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
   }
-  
-  
-  /* Optional snow effect
-  
-  #snow {
-    background: none;
-    font-family: Androgyne;
-    background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    animation: snow 10s linear infinite;
-    opacity: 50%;
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
   }
-  
-  @keyframes snow {
-    0% {
-      background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    50% {
-      background-position: 500px 500px, 100px 200px, -100px 150px;
-    }
-    100% {
-      background-position: 500px 1000px, 200px 400px, -100px 300px;
-    }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
   }
-    */
-  
-  .title_div {
-    background-image: url(../images/wave.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-    border-radius: 50px;
-    box-shadow: 3px 3px 10px 3px gray;
-  }
-  
-  h1,
-  h2 {
+}
+  */
+  header {
+    background-color: #333;
     color: white;
-    text-shadow: 5px 5px 10px 5px black;
-    text-align: center;
-    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+   
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block; /* Visible sur mobile */
+    
+}
+/* Cacher la case à cocher pour le menu toggle */
+.menu-checkbox {
+    display: none; /* Cache la case à cocher */
+}
+/* Afficher le menu si la case est cochée */
+.menu-checkbox:checked + .menu-icon + nav {
+    display: block; /* Affiche le menu quand la case est cochée */
+   
+           
+}
+nav {
+    display: none; /* Le menu est caché par défaut sur mobile */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 10px 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Styles pour le dropdown (sous-menu) */
+details {
+    position: relative;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: #333;
+    font-size: 18px;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease; /* Pour une transition douce */
+
+}
+details[open] summary {
+    background-color: #555; /* Changer la couleur du summary quand ouvert */
+}
+
+.dropdown-menu {
+    display: block; /* Affiche le sous-menu lorsque details est ouvert */
+    list-style: none;
+    padding-left: 20px;
+    background-color: white;
+    
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+/* Barre de recherche */
+.search-container { 
+    display: flex;
+    align-items: baseline;
+    display: flex;
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    
+}
+.search-input {
+    border-radius: 10px;
+    display: none;
+    
+}
+.search-icon {
+    font-size: 14px;
+    border-radius: 10px;
+}
+.search-input:focus {
+    outline: none;
+    width: 200px; /* Agrandir la barre de recherche lors du focus */
+}
+  /* Main style */
+main {
+  width: 100%;
+  justify-content: center;
+}
+
+.title_div {
+  background-image: url(../images/wave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px 3px gray;
+}
+
+main h1 {
+  font-size: 8vw;
+  text-align: center;
+  text-shadow: 3px 4px 5px #555, 1px -1px 2px #555;
+}
+
+main h2 {
+  color: white;
+  text-shadow: 5px 5px 10px 5px black;
+  text-align: center;
+  height: 100%;
+  opacity: 1;
+  text-shadow: 5px black;
+  font-size: 24px;
+}
+
+main h3 {
+  text-align: center;
+  font-size: xx-large;
+  text-shadow: 0 0 10px lightgray, 0 0 15px gray;
+}
+
+main p,
+main li {
+  font-size: 18px; /* Augmente la taille de la police */
+  line-height: 1.6; /* Espacement entre les lignes */
+  color: #555; /* Couleur de texte douce */
+  box-shadow: -5px 0 10px 0 black;
+
+  max-width: 80%;
+
+  padding: 15px;
+  border-left: 5px solid black; /* Bordure gauche colorée */
+  border-radius: 5px; /* Coins arrondis */
+
+  background-color: #f4f2f3; /* Fond clair */
+
+  box-shadow: -5px 0 10px 0 black;
+
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
-    text-shadow: 5px black;
+  }
+}
+
+#main_img {
+  height: 100vh;
+  width: inherit;
+
+  background-image: url(../images/fansite2/yuki-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -150px;
+
+  box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+}
+
+#main_img div {
+  height: inherit;
+
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s ease;
+}
+
+#main_img div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+#introduction img {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+
+  margin: 1%;
+  object-fit: cover;
+}
+
+#introduction div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction p {
+  min-width: 60%;
+}
+
+#best_work {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+#best_work > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#best_work p {
+  max-width: 80%;
+}
+
+.best_media_div {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.best_media_div img {
+  height: inherit;
+  width: 100%;
+
+  border-radius: 25px;
+
+  object-fit: cover;
+  aspect-ratio: 1/1;
+
+  margin: 1% 0;
+}
+
+.best_media_div img:hover {
+  filter: brightness(0.5);
+}
+
+.best_media_div audio {
+  height: 40px;
+  width: 100%;
+}
+
+#news ul,
+#events ul,
+#external_site ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+#news li,
+#external_site li {
+  margin: 1% 0;
+}
+
+#events li {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 40%;
+  margin: 1% 0;
+}
+
+#media_list {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+
+  background-color: gray;
+}
+
+.media_cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+
+  height: 200px;
+  width: 200px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media_cover:nth-child(1) {
+  background-image: url(../images/fansite2/noir.jpg);
+}
+
+.media_cover:nth-child(2) {
+  background-image: url(../images/fansite2/tsubasa2.jpg);
+}
+
+.media_cover:nth-child(3) {
+  background-image: url(../images/fansite2/sao.jpg);
+}
+
+.media_cover:nth-child(4) {
+  background-image: url(../images/fansite2/fate.jpg);
+}
+
+.media_cover:nth-child(5) {
+  background-image: url(../images/fansite2/maihime.jpg);
+}
+
+.media_cover:nth-child(6) {
+  background-image: url(../images/fansite2/msmm.jpg);
+}
+
+.media_cover:nth-child(7) {
+  background-image: url(../images/fansite2/kimetsu.jpg);
+}
+
+.media_cover:nth-child(8) {
+  background-image: url(../images/fansite2/hack.jpg);
+}
+
+.media_cover svg {
+  fill: white;
+  stroke: white;
+  stroke-width: 1;
+
+  visibility: hidden;
+}
+
+.media_cover:hover {
+  opacity: 0.5;
+}
+
+.media_cover:hover svg {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+#social_media {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 50px;
+
+  text-align: center;
+}
+
+#social_media img {
+  height: 50px;
+  width: 50px;
+}
+
+ /* Style de base du footer */
+ footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: auto; /* Important pour "pousser" le footer vers le bas */
+  width: 100%;
+}
+.footer-p {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+/* Style pour le menu de base */
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Style de chaque élément du menu */
+.footer-menu li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+/* Style des liens du menu */
+.footer-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  background-color: #444;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.footer-menu li a:hover {
+  background-color: #555;
+}
+/* Afficher le menu déroulant au survol */
+.footer-menu li:hover .dropdown {
+  display: block; /* Afficher la liste déroulante au survol de l'élément */
+}
+.footer p {
+  margin: 0%;
+  padding: 0;
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 80%;
+    justify-content: center;
+  }
+
+  main h1,
+  main h2 {
     font-size: 40px;
   }
-  
-  h3 {
-    text-align: center;
-    font-size: xx-large;
-    text-shadow: 0 0 10px lightgray, 0 0 15px gray;
+
+  main p {
+    max-width: 80%;
   }
-  
-  p {
-    border-left: 5px solid black;
-    border-radius: 5px;
-    box-shadow: -5px 0 10px 0 black;
-    padding: 2%;
-  
-    font-size: 22px;
-  
-    background-color: rgba(255, 255, 255, 0.85);
-  
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10px;
-  
-    font-size: 22px;
-    border-left: 5px solid blue;
-    background-color: rgba(235, 235, 255, 0.85);
-  }
-  
-  #news li {
-    box-shadow: -4px 0 10px 5px lightblue;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+
   #main_img {
-    height: 100vh;
-    width: inherit;
-  
-    background-image: url(../images/fansite2/yuki-big.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+    width: 100%;
   }
-  
-  #main_img div {
-    height: inherit;
-    width: inherit;
-  
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 1s ease;
-  }
-  
-  #main_img div:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 1s ease;
-  }
-  
+
   #introduction {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-  
-    min-height: 100vh;
   }
-  
-  #introduction img {
-    height: 250px;
-    width: 250px;
-    border: 3px solid beige;
-  
-    margin: 1%;
-    object-fit: cover;
-  }
-  
-  #introduction div {
-    display: flex;
-    flex-direction: column;
-  }
-  
+
   #introduction p {
-    margin-left: 2%;
-    min-width: 60%;
+    max-width: 80%;
   }
-  
-  #best_work {
-    display: flex;
+
+  #main_img {
+    background-size: cover;
+    background-position-x: 0;
+  }
+
+  #news ul,
+  #external_site ul {
     flex-direction: column;
-  
-    min-height: 100vh;
-  }
-  
-  #best_work > div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #best_work p {
-    margin-left: 2%;
-    min-width: 40%;
-  }
-  
-  .best_media_div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .best_media_div img {
-    height: 200px;
-  
-    border-radius: 25px;
-  
-    object-fit: cover;
-    aspect-ratio: 1/1;
-  
-    margin: 1%;
-  }
-  
-  .best_media_div img:hover {
-    filter: brightness(0.5);
-  }
-  
-  .best_media_div audio {
-    height: 40px;
-    width: inherit;
-  }
-  
-  #media_list {
-    display: flex;
-    justify-content: space-between;
-    overflow: scroll;
-  
-    background-color: gray;
-  }
-  
-  .media_cover {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 2%;
-  
-    height: 200px;
-    width: 200px;
-  
-    background-repeat: no-repeat;
-    background-size: contain;
   }
-  
-  .media_cover:nth-child(1) {
-    background-image: url(../images/fansite2/noir.jpg);
+
+  #best_work > div {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  .media_cover:nth-child(2) {
-    background-image: url(../images/fansite2/tsubasa2.jpg);
+
+  #best_work p {
+    max-width: 50%;
+    margin-left: 2%;
   }
-  
-  .media_cover:nth-child(3) {
-    background-image: url(../images/fansite2/sao.jpg);
+
+  .best_media_div {
+    width: 70%;
   }
-  
-  .media_cover:nth-child(4) {
-    background-image: url(../images/fansite2/fate.jpg);
+
+  #events li {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    margin: 1% 0;
   }
-  
-  .media_cover:nth-child(5) {
-    background-image: url(../images/fansite2/maihime.jpg);
+    
+    
   }
-  
-  .media_cover:nth-child(6) {
-    background-image: url(../images/fansite2/msmm.jpg);
-  }
-  
-  .media_cover:nth-child(7) {
-    background-image: url(../images/fansite2/kimetsu.jpg);
-  }
-  
-  .media_cover:nth-child(8) {
-    background-image: url(../images/fansite2/hack.jpg);
-  }
-  
-  .media_cover svg {
-    fill: white;
-    stroke: white;
-    stroke-width: 1;
-  
-    visibility: hidden;
-  }
-  
-  .media_cover:hover {
-    opacity: 0.5;
-  }
-  
-  .media_cover:hover svg {
-    visibility: visible;
-    opacity: 0.8;
-  }
-  
-  @media only screen and (min-width: 700px) {
-    #introduction {
-      flex-direction: row;
-      justify-content: space-between;
+
+  /* Pour les écrans plus larges (tablettes, ordinateurs) */
+  @media screen and (min-width: 768px) {
+    .menu-icon {
+      display: none; /* Cache l'icône burger sur les grands écrans */
     }
   
-    #introduction p {
-      max-width: 80%;
+    nav {
+      display: block; /* Affiche le menu sur les grands écrans */
     }
   
-    #best_work {
-      justify-content: space-around;
+    nav ul {
+      display: flex;
+      flex-direction: row; /* Menu horizontal */
+      justify-content: flex-start;
     }
   
-    #best_work > div {
-      flex-direction: row;
+    nav ul li {
+      margin: 0 15px;
     }
-  }
+  
+    nav ul li a {
+      font-size: 18px;
+    }
+  
+    /* Afficher les sous-menus en mode horizontal sur grand écran */
+    details {
+      display: inline-block;
+    }
+  
+    .dropdown-menu {
+      display: block; /* Affiche le sous-menu en permanence sur grand écran */
+    }
+    /* Barre de recherche */
+    .search-container {
+        position: relative;
+        right: 20px;
+        flex-direction: row;
+        }
+
+    .search-input {
+    display: inline-block;
+    width: 250px; /* Taille de la barre de recherche sur desktop */
+    }
+    #events li {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 40%;
+      margin: 1% 0;
+    }
+}

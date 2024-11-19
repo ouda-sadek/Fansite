@@ -11,32 +11,106 @@ body {
     line-height: 1.6; /* Espacement entre les lignes */
 }
 /*menu*/
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+header {
     background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    
+   
 }
-
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block; /* Visible sur mobile */
+    
+}
+/* Cacher la case à cocher pour le menu toggle */
+.menu-checkbox {
+    display: none; /* Cache la case à cocher */
+}
+/* Afficher le menu si la case est cochée */
+.menu-checkbox:checked + .menu-icon + nav {
+    display: block; /* Affiche le menu quand la case est cochée */
+   
+           
+}
+nav {
+    display: none; /* Le menu est caché par défaut sur mobile */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 nav ul li {
-    margin: 0;
-    border-bottom: 1px solid #444;
+    margin: 10px 0;
 }
-
 nav ul li a {
-    display: block;
-    padding: 10px;
     color: white;
     text-decoration: none;
-    text-align: center;
+    font-size: 18px;
+}
+/*nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Styles pour le dropdown (sous-menu) */
+details {
+    position: relative;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: #333;
+    font-size: 18px;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease; /* Pour une transition douce */
+
+}
+details[open] summary {
+    background-color: #555; /* Changer la couleur du summary quand ouvert */
 }
 
-nav ul li a:hover {
-    background-color: #555;
+.dropdown-menu {
+    display: block; /* Affiche le sous-menu lorsque details est ouvert */
+    list-style: none;
+    padding-left: 20px;
+    background-color: white;
+    
 }
-
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+/* Barre de recherche */
+.search-container { 
+    display: flex;
+    align-items: baseline;
+    
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+}
+.search-input {
+    border-radius: 10px;
+    display: none;
+    
+}
+.search-icon {
+    font-size: 14px;
+    border-radius: 10px;
+}
+.search-input:focus {
+    outline: none;
+    width: 200px; /* Agrandir la barre de recherche lors du focus */
+}
 main{
     display: flex;
     
@@ -201,7 +275,54 @@ section{
    
     text-align: center;
 }
+  /* Style de base du footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: auto; /* Important pour "pousser" le footer vers le bas */
+}
+.footer-p {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
 
+/* Style pour le menu de base */
+.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* Style de chaque élément du menu */
+.footer-menu li {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+/* Style des liens du menu */
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    background-color: #444;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.footer-menu li a:hover {
+    background-color: #555;
+}
+/* Afficher le menu déroulant au survol */
+.footer-menu li:hover .dropdown {
+    display: block; /* Afficher la liste déroulante au survol de l'élément */
+}
+.footer p {
+    margin: 0%;
+    padding: 0;
+}
 
 /* Media queries pour les écrans plus grands (tablettes et ordinateurs de bureau) */
 @media (min-width: 600px) {
@@ -229,10 +350,51 @@ section{
         margin: 0 auto;
     }
 
-    nav ul {
-        justify-content: center;
-    }
+    
    
    
     
+}
+@media screen and (min-width: 768px) {
+    .menu-icon {
+      display: none; /* Cache l'icône burger sur les grands écrans */
+    }
+  
+    nav {
+      display: block; /* Affiche le menu sur les grands écrans */
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row; /* Menu horizontal */
+      justify-content: flex-start;
+    }
+  
+    nav ul li {
+      margin: 0 15px;
+    }
+  
+    nav ul li a {
+      font-size: 18px;
+    }
+  
+    /* Afficher les sous-menus en mode horizontal sur grand écran */
+    details {
+      display: inline-block;
+    }
+  
+    .dropdown-menu {
+      display: block; /* Affiche le sous-menu en permanence sur grand écran */
+    }
+    /* Barre de recherche */
+    .search-container {
+        position: relative;
+        right: 20px;
+        flex-direction: row;
+        }
+
+    .search-input {
+    display: inline-block;
+    width: 250px; /* Taille de la barre de recherche sur desktop */
+    }
 }
