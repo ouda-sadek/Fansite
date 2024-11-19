@@ -8,7 +8,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 main {
@@ -53,7 +52,6 @@ header {
   color: white;
   padding: 10px 20px;
   display: flex;
-  width: 100%;
 }
 .menu-icon {
   font-size: 30px;
@@ -339,6 +337,11 @@ main li {
   justify-content: space-around;
 }
 
+#external_site ul {
+  flex-direction: column;
+  align-items: center;
+}
+
 #news li,
 #external_site li {
   margin: 1% 0;
@@ -443,7 +446,6 @@ footer {
   text-align: center;
   font-family: Arial, sans-serif;
   margin-top: auto; /* Important pour "pousser" le footer vers le bas */
-  width: 100%;
 }
 .footer-p {
   margin: 0px;
@@ -520,9 +522,12 @@ footer {
     background-position-x: 0;
   }
 
-  #news ul,
-  #external_site ul {
+  #news li {
     flex-direction: column;
+  }
+
+  #external_site ul {
+    flex-direction: row;
     align-items: center;
   }
 
@@ -546,6 +551,7 @@ footer {
     flex-basis: 40%;
     margin: 1% 0;
   }
+
   .menu-icon {
     display: none; /* Cache l'icône burger sur les grands écrans */
   }
