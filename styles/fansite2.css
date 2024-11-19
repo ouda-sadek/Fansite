@@ -10,8 +10,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Optional snow effect
@@ -42,111 +44,101 @@ main {
   }
 }
   */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    width: 100%;
-   
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
 }
 .menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    display: block; /* Visible sur mobile */
-    
+  font-size: 30px;
+  cursor: pointer;
+  display: block; /* Visible sur mobile */
 }
 /* Cacher la case à cocher pour le menu toggle */
 .menu-checkbox {
-    display: none; /* Cache la case à cocher */
+  display: none; /* Cache la case à cocher */
 }
 /* Afficher le menu si la case est cochée */
 .menu-checkbox:checked + .menu-icon + nav {
-    display: block; /* Affiche le menu quand la case est cochée */
-   
-           
+  display: block; /* Affiche le menu quand la case est cochée */
 }
 nav {
-    display: none; /* Le menu est caché par défaut sur mobile */
+  display: none; /* Le menu est caché par défaut sur mobile */
 }
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 nav ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 /*nav ul li a:hover {
     text-decoration: underline;
 }
 /* Styles pour le dropdown (sous-menu) */
 details {
-    position: relative;
+  position: relative;
 }
 summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 0;
-    background-color: #333;
-    font-size: 18px;
-    color: white;
-    border: none;
-    transition: background-color 0.5s ease; /* Pour une transition douce */
-
+  list-style: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: #333;
+  font-size: 18px;
+  color: white;
+  border: none;
+  transition: background-color 0.5s ease; /* Pour une transition douce */
 }
 details[open] summary {
-    background-color: #555; /* Changer la couleur du summary quand ouvert */
+  background-color: #555; /* Changer la couleur du summary quand ouvert */
 }
 
 .dropdown-menu {
-    display: block; /* Affiche le sous-menu lorsque details est ouvert */
-    list-style: none;
-    padding-left: 20px;
-    background-color: white;
-    
+  display: block; /* Affiche le sous-menu lorsque details est ouvert */
+  list-style: none;
+  padding-left: 20px;
+  background-color: white;
 }
 .dropdown-menu li a {
-    display: block;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
 }
 .dropdown-menu li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 /* Barre de recherche */
-.search-container { 
-    display: flex;
-    align-items: baseline;
-    display: flex;
-    margin-left: auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    
-    
+.search-container {
+  display: flex;
+  align-items: baseline;
+  display: flex;
+  margin-left: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .search-input {
-    border-radius: 10px;
-    display: none;
-    
+  border-radius: 10px;
+  display: none;
 }
 .search-icon {
-    font-size: 14px;
-    border-radius: 10px;
+  font-size: 14px;
+  border-radius: 10px;
 }
 .search-input:focus {
-    outline: none;
-    width: 200px; /* Agrandir la barre de recherche lors du focus */
+  outline: none;
+  width: 200px; /* Agrandir la barre de recherche lors du focus */
 }
-  /* Main style */
-main {
+/* Main style */
+main > div {
   width: 100%;
-  justify-content: center;
 }
 
 .title_div {
@@ -204,93 +196,34 @@ main li {
 @keyframes fadeIn {
   from {
     opacity: 0;
->>>>>>>>> Temporary merge branch 2
   }
-  
-  h1,
-  h2 {
-    color: white;
-    text-shadow: 5px 5px 10px 5px black;
-    text-align: center;
-    height: 100%;
+  to {
     opacity: 1;
-    text-shadow: 5px black;
-    font-size: 40px;
   }
-<<<<<<<<< Temporary merge branch 1
-  
-  h3 {
-    text-align: center;
-    font-size: xx-large;
-    text-shadow: 0 0 10px lightgray, 0 0 15px gray;
-  }
-  
-  p {
-    border-left: 5px solid black;
-    border-radius: 5px;
-    box-shadow: -5px 0 10px 0 black;
-    padding: 2%;
-  
-    font-size: 22px;
-  
-    background-color: rgba(255, 255, 255, 0.85);
-  
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    padding: 1%;
-    margin: 1%;
-    border-radius: 10px;
-  
-    font-size: 22px;
-    border-left: 5px solid blue;
-    background-color: rgba(235, 235, 255, 0.85);
-  }
-  
-  #news li {
-    box-shadow: -4px 0 10px 5px lightblue;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  #main_img {
-    height: 100vh;
-    width: inherit;
-  
-    background-image: url(../images/fansite2/yuki-big.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    box-shadow: 4px 4px 20px black, -4px -4px 20px black;
-  }
-  
-  #main_img div {
-    height: inherit;
-    width: inherit;
-  
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 1s ease;
-  }
-  
-  #main_img div:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 1s ease;
-  }
-  
-=========
+}
+
+#main_img {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(../images/fansite2/yuki-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+}
+
+#main_img div {
+  height: inherit;
+  width: inherit;
+
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s ease;
+}
+
+#main_img div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
 }
 
 #main_img {
@@ -497,8 +430,8 @@ main li {
   width: 75px;
 }
 
- /* Style de base du footer */
- footer {
+/* Style de base du footer */
+footer {
   background-color: #333;
   color: white;
   padding: 10px;
@@ -546,10 +479,9 @@ main li {
   margin: 0%;
   padding: 0;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
   main > div {
     width: 80%;
-    justify-content: center;
   }
 
   main h1,
@@ -561,35 +493,32 @@ main li {
     max-width: 80%;
   }
 
-  #main_img {
-    width: 100%;
-  }
-
->>>>>>>>> Temporary merge branch 2
   #introduction {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  
+
     min-height: 100vh;
   }
-  
+
   #introduction img {
     height: 250px;
     width: 250px;
-    border: 3px solid beige;
-  
+    border-radius: 5px;
+
     margin: 1%;
     object-fit: cover;
   }
-  
+
   #introduction div {
     display: flex;
     flex-direction: column;
   }
 
   #introduction p {
-    max-width: 80%;
+    margin-left: 2%;
+    min-width: 60%;
   }
 
   #main_img {
@@ -617,7 +546,51 @@ main li {
     width: 70%;
   }
 
-  #realisation li {
-    flex-basis: 100%;
->>>>>>>>> Temporary merge branch 2
+  #events li {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    margin: 1% 0;
   }
+  .menu-icon {
+    display: none; /* Cache l'icône burger sur les grands écrans */
+  }
+
+  nav {
+    display: block; /* Affiche le menu sur les grands écrans */
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row; /* Menu horizontal */
+    justify-content: flex-start;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  /* Afficher les sous-menus en mode horizontal sur grand écran */
+  details {
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    display: block; /* Affiche le sous-menu en permanence sur grand écran */
+  }
+  /* Barre de recherche */
+  .search-container {
+    position: relative;
+    right: 20px;
+    flex-direction: row;
+  }
+
+  .search-input {
+    display: inline-block;
+    width: 250px; /* Taille de la barre de recherche sur desktop */
+  }
+}
