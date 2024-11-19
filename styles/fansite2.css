@@ -1,5 +1,7 @@
 body {
   background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -8,42 +10,143 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  
 }
 
 /* Optional snow effect
-  
-  #snow {
-    background: none;
-    font-family: Androgyne;
-    background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    animation: snow 10s linear infinite;
-    opacity: 50%;
+
+#snow {
+  background: none;
+  font-family: Androgyne;
+  background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  animation: snow 10s linear infinite;
+  opacity: 50%;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
   }
-  
-  @keyframes snow {
-    0% {
-      background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    50% {
-      background-position: 500px 500px, 100px 200px, -100px 150px;
-    }
-    100% {
-      background-position: 500px 1000px, 200px 400px, -100px 300px;
-    }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
   }
 }
   */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+   
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block; /* Visible sur mobile */
+    
+}
+/* Cacher la case à cocher pour le menu toggle */
+.menu-checkbox {
+    display: none; /* Cache la case à cocher */
+}
+/* Afficher le menu si la case est cochée */
+.menu-checkbox:checked + .menu-icon + nav {
+    display: block; /* Affiche le menu quand la case est cochée */
+   
+           
+}
+nav {
+    display: none; /* Le menu est caché par défaut sur mobile */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 10px 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Styles pour le dropdown (sous-menu) */
+details {
+    position: relative;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    background-color: #333;
+    font-size: 18px;
+    color: white;
+    border: none;
+    transition: background-color 0.5s ease; /* Pour une transition douce */
 
-main > div {
+}
+details[open] summary {
+    background-color: #555; /* Changer la couleur du summary quand ouvert */
+}
+
+.dropdown-menu {
+    display: block; /* Affiche le sous-menu lorsque details est ouvert */
+    list-style: none;
+    padding-left: 20px;
+    background-color: white;
+    
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+/* Barre de recherche */
+.search-container { 
+    display: flex;
+    align-items: baseline;
+    display: flex;
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+    
+}
+.search-input {
+    border-radius: 10px;
+    display: none;
+    
+}
+.search-icon {
+    font-size: 14px;
+    border-radius: 10px;
+}
+.search-input:focus {
+    outline: none;
+    width: 200px; /* Agrandir la barre de recherche lors du focus */
+}
+  /* Main style */
+main {
   width: 100%;
+  justify-content: center;
 }
 
 .title_div {
@@ -101,11 +204,93 @@ main li {
 @keyframes fadeIn {
   from {
     opacity: 0;
+>>>>>>>>> Temporary merge branch 2
   }
-
-  to {
-    opacity: 0.85;
+  
+  h1,
+  h2 {
+    color: white;
+    text-shadow: 5px 5px 10px 5px black;
+    text-align: center;
+    height: 100%;
+    opacity: 1;
+    text-shadow: 5px black;
+    font-size: 40px;
   }
+<<<<<<<<< Temporary merge branch 1
+  
+  h3 {
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 0 0 10px lightgray, 0 0 15px gray;
+  }
+  
+  p {
+    border-left: 5px solid black;
+    border-radius: 5px;
+    box-shadow: -5px 0 10px 0 black;
+    padding: 2%;
+  
+    font-size: 22px;
+  
+    background-color: rgba(255, 255, 255, 0.85);
+  
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+  
+    font-size: 22px;
+    border-left: 5px solid blue;
+    background-color: rgba(235, 235, 255, 0.85);
+  }
+  
+  #news li {
+    box-shadow: -4px 0 10px 5px lightblue;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #main_img {
+    height: 100vh;
+    width: inherit;
+  
+    background-image: url(../images/fansite2/yuki-big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+  }
+  
+  #main_img div {
+    height: inherit;
+    width: inherit;
+  
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+  }
+  
+  #main_img div:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 1s ease;
+  }
+  
+=========
 }
 
 #main_img {
@@ -206,7 +391,7 @@ main li {
 }
 
 #news ul,
-#realisations ul,
+#events ul,
 #external_site ul {
   display: flex;
   flex-wrap: wrap;
@@ -221,7 +406,7 @@ main li {
   margin: 1% 0;
 }
 
-#realisations li {
+#events li {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 40%;
@@ -312,9 +497,59 @@ main li {
   width: 75px;
 }
 
+ /* Style de base du footer */
+ footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: auto; /* Important pour "pousser" le footer vers le bas */
+  width: 100%;
+}
+.footer-p {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+/* Style pour le menu de base */
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Style de chaque élément du menu */
+.footer-menu li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+/* Style des liens du menu */
+.footer-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  background-color: #444;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.footer-menu li a:hover {
+  background-color: #555;
+}
+/* Afficher le menu déroulant au survol */
+.footer-menu li:hover .dropdown {
+  display: block; /* Afficher la liste déroulante au survol de l'élément */
+}
+.footer p {
+  margin: 0%;
+  padding: 0;
+}
 @media only screen and (min-width: 1000px) {
   main > div {
     width: 80%;
+    justify-content: center;
   }
 
   main h1,
@@ -326,32 +561,35 @@ main li {
     max-width: 80%;
   }
 
-  #introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    min-height: 100vh;
+  #main_img {
+    width: 100%;
   }
 
+>>>>>>>>> Temporary merge branch 2
+  #introduction {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    min-height: 100vh;
+  }
+  
   #introduction img {
     height: 250px;
     width: 250px;
-    border-radius: 5px;
-
+    border: 3px solid beige;
+  
     margin: 1%;
     object-fit: cover;
   }
-
+  
   #introduction div {
     display: flex;
     flex-direction: column;
   }
 
   #introduction p {
-    margin-left: 2%;
-    min-width: 60%;
+    max-width: 80%;
   }
 
   #main_img {
@@ -381,5 +619,5 @@ main li {
 
   #realisation li {
     flex-basis: 100%;
+>>>>>>>>> Temporary merge branch 2
   }
-}

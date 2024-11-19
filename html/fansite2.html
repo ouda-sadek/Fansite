@@ -6,10 +6,73 @@
     <meta name="author" content="Jeremy" />
     <meta name="description" content="THE website for Kajiura" />
     <link rel="stylesheet" href="../styles/fansite2.css" />
+   
 
     <title>Kajiura Yuki-sama</title>
   </head>
   <body>
+    <header>
+      <!-- Case à cocher pour le menu toggle -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    
+      <!-- Icône du menu burger (visible sur mobile) -->
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+      <!-- Menu de navigation -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <!-- Sous-menu "dropdown" pour Tim Berners-Lee -->
+          <li>
+              <details class="dropdown">
+                  <summary class="dropdown-toggle">Luc Besson</summary>
+                  <ul class="dropdown-menu">
+                      <li><a href="fansite1.html">Presentation</a></li>
+                      <li><a href="fansite1.html#news">News</a></li>
+                      <li><a href="fansite1.html#achievements">Achievements</a></li>
+                      <li><a href="fansite1.html#events">Events</a></li>
+                      <li><a href="fansite1.html#photos-videos">Photos and Videos</a></li>
+                      <li><a href="fansite1.html#links">Links</a></li>
+                  </ul>
+              </details>
+          </li>
+          <!-- Sous-menu "dropdown" pour  Kajiura Yuki   !-->
+          <li>
+              <details class="dropdown">
+                  <summary class="dropdown-toggle">Kajiura Yuki</summary>
+                  <ul class="dropdown-menu">
+                      <li><a href="fansite2.html">Presentation</a></li>
+                      <li><a href="fansite2.html#news">News</a></li>
+                      <li><a href="fansite2.html#achievements">Achievements</a></li>
+                      <li><a href="fansite2.html#events">Events</a></li>
+                      <li><a href="fansite2.html#photos-videos">Photos and Videos</a></li>
+                      <li><a href="fansite2.html#links">Links</a></li>
+                  </ul>
+              </details>
+            </li>
+          <!-- Sous-menu "dropdown" pour Blake Lively-->
+          <li> 
+              <details class="dropdown">
+                  <summary class="dropdown-toggle">Blake Lively</summary>
+                  <ul class="dropdown-menu">
+                      <li><a href="fansite3.html">Presentation</a></li>
+                      <li><a href="fansite3.html">News</a></li>
+                      <li><a href="fansite3.html#achievements">Achievements</a></li>
+                      <li><a href="fansite3.html#events">Events</a></li>
+                      <li><a href="fansite3.html#photos-videos">Photos and Videos</a></li>
+                      <li><a href="fansite3.html#links">Links</a></li>
+                  </ul>
+              </details>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Search-->
+      <div class="search-container">
+          <button class="search-icon">&#128269;</button> <!-- Icône de loupe -->
+          <input type="text" placeholder="Rechercher..." id="search-input" class="search-input">
+      </div>
+  </header>
     <!--Jeremy: It's my page!-->
     <!-- Optional snow effect -->
     <main>
@@ -52,6 +115,38 @@
               began working as a systems engineering programmer until 1992 that
               she decided to focus more on music.
             </p>
+      </section>
+      <div class="title_div">
+        <h2 id="news">NEWS</h2>
+      </div>
+      <section id="news">
+        <ul>
+          <li>
+            New trailer for PMMM Walpurgis no Kaiten and SEED FREEDOM ZERO movie
+            announced!
+          </li>
+          <li>Kalafina anniversary Live…. but without Yuki Kajiura :(</li>
+          <li>
+            20th Fate Stay Night Anniversary Concert -Heaven's Feel and UBW- to
+            be released on BD / Live CD!
+          </li>
+        </ul>
+      </section>
+
+      <div class="title_div">
+        <h2 id="achievements">ACHIEVEMENTS</h2>
+      </div>
+      <article id="best_work">
+        <h3>Sis Puella Magica</h3>
+        <div>
+          <div class="best_media_div">
+            <img
+              src="../images/fansite2/homumado.png"
+              alt="A drawing of two girls hugging"
+            />
+            <audio controls>
+              <source src="" type="audio/mp3" />
+            </audio>
           </div>
         </section>
         <div class="title_div">
@@ -107,20 +202,20 @@
               </audio>
             </div>
 
-            <p>
-              The ship of fools is an allegory, first appearing in Book VI of
-              Plato's Republic, about a ship with a dysfunctional crew. The
-              allegory is intended to represent the problems of governance
-              prevailing in a political system not based on expert knowledge.
-            </p>
-          </div>
-        </article>
-        <section id="realisations">
-          <ul>
-            <li>Noir OST</li>
-            <li>Tsubasa: Reservoir Chronicle OST</li>
-            <li>My-HiME OST</li>
-            <li>.hack//Sign OST</li>
+          <p>
+            The ship of fools is an allegory, first appearing in Book VI of
+            Plato's Republic, about a ship with a dysfunctional crew. The
+            allegory is intended to represent the problems of governance
+            prevailing in a political system not based on expert knowledge.
+          </p>
+        </div>
+      </article>
+      <section id="events">
+        <ul>
+          <li>Noir OST</li>
+          <li>Tsubasa: Reservoir Chronicle OST</li>
+          <li>My-HiME OST</li>
+          <li>.hack//Sign OST</li>
 
             <li>Puella Magi Madoka Magica OST</li>
             <li>Sword Art Online OST</li>
@@ -129,8 +224,19 @@
           </ul>
         </section>
 
-        <div class="title_div">
-          <h2>PHOTOS AND VIDEOS</h2>
+      <div class="title_div">
+        <h2 id="photos-videos">PHOTOS AND VIDEOS</h2>
+      </div>
+      <article id="media_list">
+        <div class="media_cover">
+          <a
+            href="https://www.youtube.com/watch?v=Yfr-dYWV1vg&list=PLtNkf-gsE3CA562PVmfaLAOh-hZWuyxQe"
+            target="_blank"
+          >
+            <svg height="200" , width="200" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="20,20 20,180 180,100" />
+            </svg>
+          </a>
         </div>
         <article id="media_list">
           <div class="media_cover">
@@ -255,31 +361,44 @@
           </div>
         </article>
 
-        <div class="title_div">
-          <h2>LINKS</h2>
-        </div>
-        <div id="external_site">
-          <ul>
-            <li><a href="https://canta-per-me.net/">Canta Per Me</a></li>
-            <li>
-              <a href="https://en.wikipedia.org/wiki/Yuki_Kajiura">Wikipedia</a>
-            </li>
-          </ul>
-        </div>
-        <div id="social_media">
-          <a href="https://www.youtube.com/channel/UCSNf96VG7sa2Cdk8-f6flUw">
-            <img src="../images/youtube-icon.png" alt="Website link" />
-          </a>
-          <a href="https://x.com/Fion0806">
-            <img src="../images/twitterx-icon.png" alt="X link" />
-          </a>
-        </div>
+      <div class="title_div">
+        <h2 id="links">LINKS</h2>
+      </div>
+      <div id="external_site">
+        <ul>
+          <li><a href="https://canta-per-me.net/">Canta Per Me</a></li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Yuki_Kajiura">Wikipedia</a>
+          </li>
+        </ul>
+      </div>
+      <div id="social_media">
+        <a href="https://www.youtube.com/channel/UCSNf96VG7sa2Cdk8-f6flUw">
+          <img src="../images/youtube-icon.png" alt="Website link" />
+        </a>
+        <a href="https://x.com/Fion0806">
+          <img src="../images/twitterx-icon.png" alt="X link" />
+        </a>
+      </div>
 
         <!--  https://canta-per-me.net/
           https://x.com/Fion0806
           https://twilog.togetter.com/Fion0806    -->
       </div>
     </main>
-    <footer></footer>
+    <footer>
+        
+      <ul class="footer-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="fansite1.html">Luc Besson</a></li>
+          <li><a href="#fansite2.html">Kajiura Yuki</a></li>
+          <li><a href="fansite3.html">Blake Lively</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+      
+      </ul>
+          <spanp>Designed by Nass, Dina and Jeremy</span><br>
+          <span>&copy; 2024 FANSITE. All rights reserved.</span>
+      </footer>
   </body>
 </html>
