@@ -3,9 +3,13 @@ body {
   margin: 0;
 
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /* Optional snow effect
@@ -38,7 +42,7 @@ body {
 }
   */
 
-main {
+main > div {
   width: 100%;
 }
 
@@ -106,7 +110,7 @@ main li {
 
 #main_img {
   height: 100vh;
-  width: inherit;
+  width: 100%;
 
   background-image: url(../images/fansite2/yuki-big.jpg);
   background-repeat: no-repeat;
@@ -304,12 +308,12 @@ main li {
 }
 
 #social_media img {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
 }
 
 @media only screen and (min-width: 1000px) {
-  main {
+  main > div {
     width: 80%;
   }
 
@@ -320,10 +324,6 @@ main li {
 
   main p {
     max-width: 80%;
-  }
-
-  #main_img {
-    width: 100%;
   }
 
   #introduction {
