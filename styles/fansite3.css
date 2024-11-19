@@ -5,7 +5,10 @@ body {
     line-height: 1.6; /* Espacement entre les lignes */
     margin: 0;
     padding: 0;
-    background-image: url(../images/fansite3/background.jpg)
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6; /* Espacement entre les lignes */
 }
 /*menu*/
 nav ul {
