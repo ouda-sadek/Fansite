@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/fansite1.css">
+
+    <meta name="author" content="Nass-Jeremy-Dina">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <!-- Case à cocher pour le menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      
+        <!-- Icône du menu burger (visible sur mobile) -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      
+        <!-- Menu de navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Sous-menu "dropdown" pour Tim Berners-Lee -->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Tim Berners-Lee</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="html/fansite1.html">Home</a></li>
+                        <li><a href="html/fansite1.html#news">News</a></li>
+                        <li><a href="html/fansite1.html#achievements">Achievements</a></li>
+                        <li><a href="html/fansite1.html#events">Events</a></li>
+                        <li><a href="html/fansite1.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="html/fansite1.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <!-- Sous-menu "dropdown" pour  Kajiura Yuki   !-->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Kajiura Yuki</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="html/fansite2.html">Home</a></li>
+                        <li><a href="html/fansite2.html">News</a></li>
+                        <li><a href="html/fansite2.html#achievements">Achievements</a></li>
+                        <li><a href="html/fansite2.html#events">Events</a></li>
+                        <li><a href="html/fansite2.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="html/fansite2.html#links">Links</a></li>
+                    </ul>
+                </details>
+              </li>
+            <!-- Sous-menu "dropdown" pour Blake Lively-->
+            <li> 
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Blake Lively</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="html/fansite3.html">Home</a></li>
+                        <li><a href="html/fansite3.html">News</a></li>
+                        <li><a href="html/fansite3.html#achievements">Achievements</a></li>
+                        <li><a href="html/fansite3.html#events">Events</a></li>
+                        <li><a href="html/fansite3.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="html/fansite3.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="html/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Search-->
+        <div class="search-container">
+            <button class="search-icon">&#128269;</button> <!-- Icône de loupe -->
+            <input type="text" placeholder="Rechercher..." id="search-input" class="search-input">
+        </div>
+    </header>
+
 </body>
 </html>

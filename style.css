@@ -1,5 +1,5 @@
 /* Mobile First */
-body {
+/*body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-image: url(../images/background.jpg);
@@ -14,7 +14,7 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
+}    */
 header {
     background-color: #333;
     color: white;
@@ -26,6 +26,7 @@ header {
     font-size: 30px;
     cursor: pointer;
     display: block; /* Visible sur mobile */
+    
 }
 /* Cacher la case à cocher pour le menu toggle */
 .menu-checkbox {

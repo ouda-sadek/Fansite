@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nass">
+    <link rel="stylesheet" href="../styles/fansite1.css">
+    
+    <title>Fansite1</title>
+</head>
+<body>
+    <header>
+        <!-- Case à cocher pour le menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      
+        <!-- Icône du menu burger (visible sur mobile) -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      
+        <!-- Menu de navigation -->
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <!-- Sous-menu "dropdown" pour Tim Berners-Lee -->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Tim Berners-Lee</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite1.html">Home</a></li>
+                        <li><a href="fansite1.html#news">News</a></li>
+                        <li><a href="fansite1.html#achievements">Achievements</a></li>
+                        <li><a href="fansite1.html#events">Events</a></li>
+                        <li><a href="fansite1.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite1.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <!-- Sous-menu "dropdown" pour   Kajiura Yuki    !-->
+            <li>
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Kajiura Yuki</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite2.html">Home</a></li>
+                        <li><a href="fansite2.html">News</a></li>
+                        <li><a href="fansite2.html#achievements">Achievements</a></li>
+                        <li><a href="fansite2.html#events">Events</a></li>
+                        <li><a href="fansite2.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite2.html#links">Links</a></li>
+                    </ul>
+                </details>
+              </li>
+            <!-- Sous-menu "dropdown" pour Blake Lively !-->
+            <li> 
+                <details class="dropdown">
+                    <summary class="dropdown-toggle">Blake Lively</summary>
+                    <ul class="dropdown-menu">
+                        <li><a href="fansite3.html">Home</a></li>
+                        <li><a href="fansite3.html">News</a></li>
+                        <li><a href="fansite3.html#achievements">Achievements</a></li>
+                        <li><a href="fansite3.html#events">Events</a></li>
+                        <li><a href="fansite3.html#photos-videos">Photos and Videos</a></li>
+                        <li><a href="fansite3.html#links">Links</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Search-->
+        <div class="search-container">
+            <button class="search-icon">&#128269;</button> <!-- Icône de loupe -->
+            <input type="text" placeholder="Rechercher..." id="search-input" class="search-input">
+        </div>
+    </header>
+
+    <main>
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>Sir Tim Berners-Lee is a British computer scientist, inventor, software engineer, and author.</p>
+            <img src="../images/fansite1/photo1.jpg" alt="photo de Sir Tim Berners-Lee" width="200px" height="145px">
+        </section>
+
+        <section id="introduction">
+            <figure>
+                <img src="../images/fansite1/photo1.jpeg" alt="photo de Sir Tim Berners-Lee" class="photo-introduction">
+                <figcaption>
+                    <h2>HI </h2>
+                    <p>Tim Berners-Lee, born June 8, 1955 in London, is a British physicist and computer scientist, principal inventor of the World Wide Web (WWW, the Web) while he...</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <p>Here's the latest celebrity news.</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <p>Sir Tim Berners-Lee has made significant contributions to the development of the World Wide Web.</p>
+        </section>
+
+        <section id="events">
+            <h2>Events</h2>
+            <p>Sir Tim Berners-Lee attended the World Wide Web Conference in 1991.</p>
+        </section>
+
+        <section id="photos-videos">
+            <h2>Photos and Videos</h2>
+            <p>Sir Tim Berners-Lee has taken pictures and videos of the World Wide Web.</p>
+        </section>
+
+        <section id="links">
+            <h2>Links</h2>
+            <p>Sir Tim Berners-Lee has made many useful links to other websites.</p>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        
+    <ul class="footer-menu">
+        <li>
+            <a href="#menuprincipal">Menu Principal</a>
+            <!-- Menu déroulant -->
+            <div class="dropdown">
+                <a href="fansite1.html">Tim Berners-Lee</a>
+                <a href="fansite2.html"> Kajiura Yuki</a>
+                <a href="fansite3.html">Blake Lively</a>
+                
+            </div>
+        </li>
+        <li><li><a href="contact.html">Contact</a></li></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+        <p>Designed by Nass, Dina and Jeremy</p>
+        <p>&copy; 2024 FANSITE. All rights reserved.</p>
+    </footer>
+</body>
+</html>
