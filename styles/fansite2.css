@@ -1,288 +1,284 @@
 body {
-  background-image: url(../images/background.jpg);
-  margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-/* Optional snow effect
-
-#snow {
-  background: none;
-  font-family: Androgyne;
-  background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  animation: snow 10s linear infinite;
-  opacity: 50%;
-}
-
-@keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
+    background-image: url(../images/fansite2/background.jpg);
+    margin: 0;
   }
-  50% {
-    background-position: 500px 500px, 100px 200px, -100px 150px;
-  }
-  100% {
-    background-position: 500px 1000px, 200px 400px, -100px 300px;
-  }
-}
-  */
-
-.title_div {
-  background-image: url(../images/wave.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  border-radius: 50px;
-  box-shadow: 3px 3px 10px 3px gray;
-}
-
-h1,
-h2 {
-  color: white;
-  text-shadow: 5px 5px 10px 5px black;
-  text-align: center;
-  height: 100%;
-  opacity: 1;
-  text-shadow: 5px black;
-  font-size: 40px;
-}
-
-h3 {
-  text-align: center;
-  font-size: xx-large;
-  text-shadow: 0 0 10px lightgray, 0 0 15px gray;
-}
-
-p {
-  border-left: 5px solid black;
-  border-radius: 5px;
-  box-shadow: -5px 0 10px 0 black;
-  padding: 2%;
-
-  font-size: 18px;
   
-  background-color: rgba(255, 255, 255, 0.85);
-
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding: 1%;
-  margin: 1%;
-  border-radius: 10px;
   
-  font-size: 22px;
-  border-left: 5px solid blue;
-  background-color: rgba(235, 235, 255, 0.85);
-}
-
-#news li {
-  box-shadow: -4px 0 10px 5px lightblue;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+  /* Optional snow effect
+  
+  #snow {
+    background: none;
+    font-family: Androgyne;
+    background-image: url("https://64.media.tumblr.com/b9ef578acf140f4c4703357d79c9e8c5/tumblr_inline_o81zmiLfQW1ro20i7_500.gif");
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    animation: snow 10s linear infinite;
+    opacity: 50%;
   }
-  to {
+  
+  @keyframes snow {
+    0% {
+      background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    50% {
+      background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+    100% {
+      background-position: 500px 1000px, 200px 400px, -100px 300px;
+    }
+  }
+    */
+  
+  .title_div {
+    background-image: url(../images/wave.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px 3px gray;
+  }
+  
+  h1,
+  h2 {
+    color: white;
+    text-shadow: 5px 5px 10px 5px black;
+    text-align: center;
+    height: 100%;
     opacity: 1;
+    text-shadow: 5px black;
+    font-size: 40px;
   }
-}
-
-#main_img {
-  height: 100vh;
-  width: inherit;
-
-  background-image: url(../images/fansite2/yuki-big.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  box-shadow: 4px 4px 20px black, -4px -4px 20px black;
-}
-
-#main_img div {
-  height: inherit;
-  width: inherit;
-
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 1s ease;
-}
-
-#main_img div:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 1s ease;
-}
-
-#introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  min-height: 100vh;
-}
-
-#introduction img {
-  height: 250px;
-  width: 250px;
-  border: 3px solid beige;
-
-  margin: 1%;
-  object-fit: cover;
-}
-
-#introduction div {
-  display: flex;
-  flex-direction: column;
-}
-
-#introduction p {
-  margin-left: 2%;
-  min-width: 60%;
-}
-
-#best_work {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100vh;
-}
-
-#best_work > div {
-  display: flex;
-  flex-direction: column;
-}
-
-#best_work p {
-  margin-left: 2%;
-  min-width: 40%;
-}
-
-.best_media_div {
-  display: flex;
-  flex-direction: column;
-}
-
-.best_media_div img {
-  height: 200px;
-
-  border-radius: 25px;
-
-  object-fit: cover;
-  aspect-ratio: 1/1;
-
-  margin: 1%;
-}
-
-.best_media_div img:hover {
-  filter: brightness(0.5);
-}
-
-.best_media_div audio {
-  height: 40px;
-  width: inherit;
-}
-
-#media_list {
-  display: flex;
-  justify-content: space-between;
-  overflow: scroll;
-
-  background-color: gray;
-}
-
-.media_cover {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2%;
-
-  height: 200px;
-  width: 200px;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.media_cover:nth-child(1) {
-  background-image: url(../images/fansite2/noir.jpg);
-}
-
-.media_cover:nth-child(2) {
-  background-image: url(../images/fansite2/tsubasa2.jpg);
-}
-
-.media_cover:nth-child(3) {
-  background-image: url(../images/fansite2/sao.jpg);
-}
-
-.media_cover:nth-child(4) {
-  background-image: url(../images/fansite2/fate.jpg);
-}
-
-.media_cover:nth-child(5) {
-  background-image: url(../images/fansite2/maihime.jpg);
-}
-
-.media_cover:nth-child(6) {
-  background-image: url(../images/fansite2/msmm.jpg);
-}
-
-.media_cover:nth-child(7) {
-  background-image: url(../images/fansite2/kimetsu.jpg);
-}
-
-.media_cover:nth-child(8) {
-  background-image: url(../images/fansite2/hack.jpg);
-}
-
-.media_cover svg {
-  fill: white;
-  stroke: white;
-  stroke-width: 1;
-
-  visibility: hidden;
-}
-
-.media_cover:hover {
-  opacity: 0.5;
-}
-
-.media_cover:hover svg {
-  visibility: visible;
-  opacity: 0.8;
-}
-
-@media only screen and (min-width: 700px) {
-  #introduction {
-    flex-direction: row;
-    justify-content: space-between;
+  
+  h3 {
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 0 0 10px lightgray, 0 0 15px gray;
   }
-
-  #introduction p {
-    max-width: 80%;
-  }
-
-  #best_work {
-    justify-content: space-around;
-  }
-
-  #best_work > div {
-    flex-direction: row;
-  }
+  
   p {
+    border-left: 5px solid black;
+    border-radius: 5px;
+    box-shadow: -5px 0 10px 0 black;
+    padding: 2%;
+  
     font-size: 22px;
+  
+    background-color: rgba(255, 255, 255, 0.85);
+  
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
   }
-}
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+  
+    font-size: 22px;
+    border-left: 5px solid blue;
+    background-color: rgba(235, 235, 255, 0.85);
+  }
+  
+  #news li {
+    box-shadow: -4px 0 10px 5px lightblue;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #main_img {
+    height: 100vh;
+    width: inherit;
+  
+    background-image: url(../images/fansite2/yuki-big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    box-shadow: 4px 4px 20px black, -4px -4px 20px black;
+  }
+  
+  #main_img div {
+    height: inherit;
+    width: inherit;
+  
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+  }
+  
+  #main_img div:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 1s ease;
+  }
+  
+  #introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+    min-height: 100vh;
+  }
+  
+  #introduction img {
+    height: 250px;
+    width: 250px;
+    border: 3px solid beige;
+  
+    margin: 1%;
+    object-fit: cover;
+  }
+  
+  #introduction div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #introduction p {
+    margin-left: 2%;
+    min-width: 60%;
+  }
+  
+  #best_work {
+    display: flex;
+    flex-direction: column;
+  
+    min-height: 100vh;
+  }
+  
+  #best_work > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #best_work p {
+    margin-left: 2%;
+    min-width: 40%;
+  }
+  
+  .best_media_div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .best_media_div img {
+    height: 200px;
+  
+    border-radius: 25px;
+  
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  
+    margin: 1%;
+  }
+  
+  .best_media_div img:hover {
+    filter: brightness(0.5);
+  }
+  
+  .best_media_div audio {
+    height: 40px;
+    width: inherit;
+  }
+  
+  #media_list {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+  
+    background-color: gray;
+  }
+  
+  .media_cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+  
+    height: 200px;
+    width: 200px;
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .media_cover:nth-child(1) {
+    background-image: url(../images/fansite2/noir.jpg);
+  }
+  
+  .media_cover:nth-child(2) {
+    background-image: url(../images/fansite2/tsubasa2.jpg);
+  }
+  
+  .media_cover:nth-child(3) {
+    background-image: url(../images/fansite2/sao.jpg);
+  }
+  
+  .media_cover:nth-child(4) {
+    background-image: url(../images/fansite2/fate.jpg);
+  }
+  
+  .media_cover:nth-child(5) {
+    background-image: url(../images/fansite2/maihime.jpg);
+  }
+  
+  .media_cover:nth-child(6) {
+    background-image: url(../images/fansite2/msmm.jpg);
+  }
+  
+  .media_cover:nth-child(7) {
+    background-image: url(../images/fansite2/kimetsu.jpg);
+  }
+  
+  .media_cover:nth-child(8) {
+    background-image: url(../images/fansite2/hack.jpg);
+  }
+  
+  .media_cover svg {
+    fill: white;
+    stroke: white;
+    stroke-width: 1;
+  
+    visibility: hidden;
+  }
+  
+  .media_cover:hover {
+    opacity: 0.5;
+  }
+  
+  .media_cover:hover svg {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  
+  @media only screen and (min-width: 700px) {
+    #introduction {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    #introduction p {
+      max-width: 80%;
+    }
+  
+    #best_work {
+      justify-content: space-around;
+    }
+  
+    #best_work > div {
+      flex-direction: row;
+    }
+  }

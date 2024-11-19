@@ -2,6 +2,7 @@
 body {
    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6; /* Espacement entre les lignes */
     margin: 0;
     padding: 0;
     background-image: url(../images/background.jpg);
@@ -90,14 +91,15 @@ section h2{
  
 p {
     font-size: 18px; /* Augmente la taille de la police */
-    
+    box-shadow: -5px 0 10px 0 black;
     color: #555; /* Couleur de texte douce */
     margin-bottom: 30px; /* Espace entre les paragraphes */
     margin-top: 10px;
     margin-bottom: 20px;
-    background-color: #f4f2f3; /* Fond clair */
+    /*background-color: #f4f2f3; /* Fond clair */
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 15px;
-    border-left: 5px solid #00246B; /* Bordure gauche colorée */
+    border-left: 5px solid black;
     border-radius: 5px; /* Coins arrondis */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -213,18 +215,24 @@ section{
         border-bottom: none;
         margin-right: 15px;
     }
+    section{
+        padding: 0;
+    }
+   
     
 }
 
 @media (min-width: 1024px) {
     /* Styles pour les ordinateurs de bureau */
     main {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
     nav ul {
-        justify-content: flex-start;
+        justify-content: center;
     }
+   
+   
     
 }
