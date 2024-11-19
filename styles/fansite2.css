@@ -495,20 +495,9 @@ footer {
 
   #introduction {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    min-height: 100vh;
-  }
-
-  #introduction img {
-    height: 250px;
-    width: 250px;
-    border-radius: 5px;
-
-    margin: 1%;
-    object-fit: cover;
   }
 
   #introduction div {
