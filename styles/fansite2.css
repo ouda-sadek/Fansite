@@ -5,6 +5,10 @@ body {
   margin: 0;
 
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -121,6 +125,7 @@ details[open] summary {
   align-items: baseline;
   display: flex;
   margin-left: auto;
+
   margin-top: 16px;
   margin-bottom: 16px;
 }
