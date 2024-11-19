@@ -1,238 +1,218 @@
 /* Styles par défaut pour les mobiles (mobile-first) */
 body {
-   
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.6; /* Espacement entre les lignes */
-    margin: 0;
-    padding: 0;
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.6; /* Espacement entre les lignes */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6; /* Espacement entre les lignes */
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.6; /* Espacement entre les lignes */
 }
 /*menu*/
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
 }
 
 nav ul li {
-    margin: 0;
-    border-bottom: 1px solid #444;
+  margin: 0;
+  border-bottom: 1px solid #444;
 }
 
 nav ul li a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-main{
-    display: flex;
-    
-    flex-direction: column;
+main {
+  display: flex;
+
+  flex-direction: column;
 }
 /*logo*/
-.container{
-    padding-bottom: 0%;
-    padding-top: 20%;
-    position: relative;
-   
+.container {
+  padding-bottom: 0%;
+  padding-top: 20%;
+  position: relative;
 }
 .logo {
-   position: absolute;
-   top: 70%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-    width: 350px;
-    height: auto;
-
-    
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: auto;
 }
 
-
-
-section h2{
-    background-image: url(../images/fansite3/wave.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    border-radius: 50px;
-    box-shadow: 3px 3px 10px gray;
-    color: white;
-    text-shadow: 2px 2px 10px;
-    text-align: center;
-    text-transform: uppercase; /* Texte en majuscules */
-    letter-spacing: 2px; /* Espacement entre les lettres */
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideIn 0.5s ease-out forwards;
+section h2 {
+  background-image: url(../images/fansite3/wave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px gray;
+  color: white;
+  text-shadow: 2px 2px 10px;
+  text-align: center;
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 2px; /* Espacement entre les lettres */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease-out forwards;
 }
 
 @keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-    
 
-
- 
 p {
-    font-size: 18px; /* Augmente la taille de la police */
-    box-shadow: -5px 0 10px 0 black;
-    color: #555; /* Couleur de texte douce */
-    margin-bottom: 30px; /* Espace entre les paragraphes */
-    margin-top: 10px;
-    margin-bottom: 20px;
-    /*background-color: #f4f2f3; /* Fond clair */
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px;
-    border-left: 5px solid black;
-    border-radius: 5px; /* Coins arrondis */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+  font-size: 18px; /* Augmente la taille de la police */
+  box-shadow: -5px 0 10px 0 black;
+  color: #555; /* Couleur de texte douce */
+  margin-bottom: 30px; /* Espace entre les paragraphes */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /*background-color: #f4f2f3; /* Fond clair */
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  border-left: 5px solid black;
+  border-radius: 5px; /* Coins arrondis */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 0.85; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
 }
 
 /* actress photos*/
 .photo-gallery {
-    display: flex; 
-    flex-direction: colunm;
-    justify-content: space-around; 
-    flex-flow:  wrap;
-    margin: 2em auto;
-    max-width: 800px;    
+  display: flex;
+  flex-direction: colunm;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin: 2em auto;
+  max-width: 800px;
 }
-section{
-    padding: 20px 20px;
+section {
+  padding: 20px 20px;
 }
 
-.photo  {
-     
-    display: flex;
-    justify-content: center;
-    
-    margin: 10px 10px;
-    width: 250px; /* Image occupe toute la largeur de l'espace */
-   
+.photo {
+  display: flex;
+  justify-content: center;
+
+  margin: 10px 10px;
+  width: 250px; /* Image occupe toute la largeur de l'espace */
 }
 .photo img {
-    
-    height: 190px;
-    width: 180px; /* Image occupe toute la largeur de l'espace */
-    border-radius: 8px;
-   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-    object-fit: cover;
-    
+  height: 190px;
+  width: 180px; /* Image occupe toute la largeur de l'espace */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+  object-fit: cover;
 }
 
 /* films photos*/
 .film-photo {
-    padding: 40px 20px;
-   
+  padding: 40px 20px;
 }
 
 .photo-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
-
 
 .film {
-    background-color: #00246B;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
+  background-color: #00246b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
 }
 
-.film img{
-    border-radius: 10%;
-    margin-bottom: 15px;
-    height: 260px;
-    width: 190px; 
+.film img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+  height: 260px;
+  width: 190px;
 }
-
 
 .film h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
-    color: plum;
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: plum;
 }
 
 .film p {
-    
-    margin: 0;
-    font-size: 1em;
-    color: #666;
+  margin: 0;
+  font-size: 1em;
+  color: #666;
 }
 
 /*links */
-.link ul a{
-    position: relative;
-    
+.link ul a {
+  position: relative;
 }
 .social-media {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 50px;
-   
-    text-align: center;
-}
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 50px;
 
+  text-align: center;
+}
 
 /* Media queries pour les écrans plus grands (tablettes et ordinateurs de bureau) */
 @media (min-width: 600px) {
-    /* Styles pour les tablettes */
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
-    }
+  /* Styles pour les tablettes */
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    nav ul li {
-        border-bottom: none;
-        margin-right: 15px;
-    }
-    section{
-        padding: 0;
-    }
-   
-    
+  nav ul li {
+    border-bottom: none;
+    margin-right: 15px;
+  }
+  section {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1024px) {
-    /* Styles pour les ordinateurs de bureau */
-    main {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+  /* Styles pour les ordinateurs de bureau */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-    nav ul {
-        justify-content: center;
-    }
-   
-   
-    
+  nav ul {
+    justify-content: center;
+  }
 }
