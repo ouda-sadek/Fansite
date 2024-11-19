@@ -89,7 +89,7 @@ section h2{
 p {
     font-size: 18px; /* Augmente la taille de la police */
     box-shadow: -5px 0 10px 0 black;
-    color: #555; /* Couleur de texte douce */
+    /*gicolor: #555; /* Couleur de texte douce */
     margin-bottom: 30px; /* Espace entre les paragraphes */
     margin-top: 10px;
     margin-bottom: 20px;
