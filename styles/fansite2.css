@@ -3,6 +3,9 @@ body {
   margin: 0;
 
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  display: flex;
+  justify-content: center;
 }
 
 /* Optional snow effect
@@ -34,6 +37,10 @@ body {
 }
   */
 
+main {
+  width: 100%;
+}
+
 .title_div {
   background-image: url(../images/wave.jpg);
   background-repeat: no-repeat;
@@ -43,8 +50,13 @@ body {
   box-shadow: 3px 3px 10px 3px gray;
 }
 
-h1,
-h2 {
+main h1 {
+  font-size: 8vw;
+  text-align: center;
+  text-shadow: 3px 4px 5px #555, 1px -1px 2px #555;
+}
+
+main h2 {
   color: white;
   text-shadow: 5px 5px 10px 5px black;
   text-align: center;
@@ -54,22 +66,23 @@ h2 {
   font-size: 24px;
 }
 
-h3 {
+main h3 {
   text-align: center;
   font-size: xx-large;
   text-shadow: 0 0 10px lightgray, 0 0 15px gray;
 }
 
-p,
-li {
+main p,
+main li {
   font-size: 18px; /* Augmente la taille de la police */
   line-height: 1.6; /* Espacement entre les lignes */
   color: #555; /* Couleur de texte douce */
   box-shadow: -5px 0 10px 0 black;
 
-  margin: 10px 30px 0 0;
+  max-width: 80%;
+
   padding: 15px;
-  border-left: 5px solid #00246b; /* Bordure gauche colorée */
+  border-left: 5px solid black; /* Bordure gauche colorée */
   border-radius: 5px; /* Coins arrondis */
 
   background-color: #f4f2f3; /* Fond clair */
@@ -78,14 +91,6 @@ li {
 
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
-}
-
-ul {
-  list-style-type: none;
-}
-
-#news li {
-  box-shadow: -4px 0 10px 5px lightblue;
 }
 
 @keyframes fadeIn {
@@ -111,7 +116,6 @@ ul {
 
 #main_img div {
   height: inherit;
-  width: inherit;
 
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 1s ease;
@@ -143,10 +147,11 @@ ul {
 #introduction div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #introduction p {
-  margin-left: 2%;
   min-width: 60%;
 }
 
@@ -160,27 +165,29 @@ ul {
 #best_work > div {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #best_work p {
-  margin-left: 2%;
-  min-width: 40%;
+  max-width: 80%;
 }
 
 .best_media_div {
   display: flex;
   flex-direction: column;
+  width: 85%;
 }
 
 .best_media_div img {
-  height: 200px;
+  height: inherit;
+  width: 100%;
 
   border-radius: 25px;
 
   object-fit: cover;
   aspect-ratio: 1/1;
 
-  margin: 1%;
+  margin: 1% 0;
 }
 
 .best_media_div img:hover {
@@ -189,18 +196,30 @@ ul {
 
 .best_media_div audio {
   height: 40px;
-  width: inherit;
+  width: 100%;
 }
 
-#realisations ul {
+#news ul,
+#realisations ul,
+#external_site ul {
   display: flex;
   flex-wrap: wrap;
+
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+#news li,
+#external_site li {
+  margin: 1% 0;
 }
 
 #realisations li {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 50%;
+  flex-basis: 40%;
+  margin: 1% 0;
 }
 
 #media_list {
@@ -273,10 +292,36 @@ ul {
   opacity: 0.8;
 }
 
-@media only screen and (min-width: 700px) {
-  h1,
-  h2 {
+#social_media {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 50px;
+
+  text-align: center;
+}
+
+#social_media img {
+  height: 50px;
+  width: 50px;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 80%;
+  }
+
+  main h1,
+  main h2 {
     font-size: 40px;
+  }
+
+  main p {
+    max-width: 80%;
+  }
+
+  #main_img {
+    width: 100%;
   }
 
   #introduction {
@@ -293,12 +338,24 @@ ul {
     background-position-x: 0;
   }
 
-  #best_work {
-    justify-content: space-around;
+  #news ul,
+  #external_site ul {
+    flex-direction: column;
+    align-items: center;
   }
 
   #best_work > div {
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #best_work p {
+    max-width: 50%;
+    margin-left: 2%;
+  }
+
+  .best_media_div {
+    width: 70%;
   }
 
   #realisation li {
