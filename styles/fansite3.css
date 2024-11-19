@@ -4,7 +4,10 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-image: url(../images/fansite3/background.jpg)
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6; /* Espacement entre les lignes */
 }
 /*menu*/
 nav ul {
@@ -87,7 +90,7 @@ section h2{
  
 p {
     font-size: 18px; /* Augmente la taille de la police */
-    line-height: 1.6; /* Espacement entre les lignes */
+    
     color: #555; /* Couleur de texte douce */
     margin-bottom: 30px; /* Espace entre les paragraphes */
     margin-top: 10px;
