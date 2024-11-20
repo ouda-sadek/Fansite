@@ -134,7 +134,7 @@ main {
   height: auto;
 }
 .welcome h1 {
-  background-image: url(../Fansite/images/wave.jpg);
+  background-image: url(images/wave.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,8 +206,9 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .idol h2 {
-  background-image: url(../Fansite/images/wave.jpg);
+  background-image: url(./images/wave.jpg);
   font-size: 15px;
   background-repeat: no-repeat;
   background-size: cover;
