@@ -80,17 +80,16 @@ details[open] summary {
 }
 
 .dropdown-menu {
-    display: flex;  /* Affiche le sous-menu lorsque details est ouvert */
-    flex-direction: column;
+    display: block; /* Affiche le sous-menu lorsque details est ouvert */
     list-style: none;
-    padding-left: 50px;
-    background-color: #555;
-    margin-top: 5px;
+    padding-left: 20px;
+    background-color: white;
+    
 }
 .dropdown-menu li a {
     display: block;
     padding: 10px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .dropdown-menu li a:hover {
@@ -98,9 +97,11 @@ details[open] summary {
 }
 .search-container { 
     display: flex;
-    align-items: center;
+    align-items: baseline;
     display: flex;
     margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
     
     
 }
@@ -114,7 +115,10 @@ details[open] summary {
     border-radius: 10px;
 }
   
-
+.search-input:focus {
+    outline: none;
+    width: 200px; /* Agrandir la barre de recherche lors du focus */
+}
   /* Main style */
 main {
     flex-grow: 1;
@@ -124,7 +128,7 @@ main {
 
 section {
     
-margin-bottom: 20px;
+    margin-bottom: 20px;
     margin: 0 auto;
     padding: 20px 20px;
     display: flex;
@@ -140,9 +144,10 @@ section h2 {
 }
 p {
    border-radius: 5px;
-   background-color:#f4f2f3;;
+   background-color:#f4f2f3;
    border-left: 5px solid #00246B;
    font-size: 20px;
+   box-shadow: -5px 0 10px 0 black;
    
 }
 
@@ -159,8 +164,8 @@ img {
     display: block;
     margin: 0px;
     border-radius: 10%;
-    width: 100%;
-    height: 100%;
+    max-width: 250px;
+    height: auto;
     object-fit: cover;
     
 }
@@ -180,6 +185,23 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     max-width: 100%;
 }
+.photo-grid-a {
+
+       
+        background-color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        box-shadow: -5px 0 10px 0 black;
+        color: black;
+        border-left: 5px solid #00246B;
+        margin: 30px 40px;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+        margin-bottom: 0%;
+       
+}
+
 .movie-poster {
     background-color: #00246B;
     border-radius: 10px;
@@ -196,6 +218,7 @@ img {
             } 
             h4 {
                 margin: 5px 0 10px;
+                color: white;
             }  
 }
 .movie-poster img {
@@ -236,7 +259,93 @@ form button {
 form button:hover {
     background: #4cae4c;
 }
+/*scroll*/
+/* Conteneur du défilement d'images */
+.image-scroll-container {
+    width: 100%;
+    overflow-x: auto;  /* Activer le défilement horizontal */
+    padding: 10px 0;  /* Espacement autour du conteneur */
+    -webkit-overflow-scrolling: touch;  /* Pour améliorer l'expérience de défilement sur iOS */
+  }
+  
+  /* Scrolling horizontal des images */
+  .image-scroll {
+    display: flex;
+    gap: 10px;  /* Espace entre les images */
+    padding: 0;  /* Supprime le padding */
+  }
+  
+  /* Style des images */
+  .image-scroll img {
+    width: 243px; /* Largeur des images pour mobile */
+    height: 342px;  /* Hauteur des images pour mobile */
+    object-fit: cover;  /* Remplir l'espace sans déformer */
+    border-radius: 10px;
+    flex-shrink: 0;  /* Empêche les images de se réduire */
 
+}
+figure {
+    text-align: center;  /* Centrer l'image et la légende */
+    margin: 20px;
+  }
+  /* Style des images */
+img {
+    width: 100%;  /* Image occupe toute la largeur du conteneur */
+    max-width: 100%;  /* Ne pas dépasser la largeur du conteneur */
+    height: auto;  /* Garder le ratio d'aspect */
+    border-radius: 10px;  /* Bords arrondis de l'image */
+  }
+  
+  /* Style de la légende */
+  figcaption {
+    font-size: 1em;  /* Taille de la police pour la légende */
+    color: #555;  /* Couleur du texte de la légende */
+    margin-top: 10px;  /* Espace entre l'image et la légende */
+    line-height: 1.5;  /* Hauteur de ligne pour plus de lisibilité */
+  }
+  .external_site_to_read a{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: -5px 0 10px 0 black;
+    color: black;
+    border-left: 5px solid #00246B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .external_site_to_watch a{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    border-left: 5px solid #00246B;
+    box-shadow: -5px 0 10px 0 black;
+    margin-right: 35px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  li::marker {
+    display: hidden;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+   
+    text-align: center;
+}
+  
+  
+  
+/*fin scroll*/
   /* Style de base du footer */
   footer {
     background-color: #333;
@@ -288,7 +397,7 @@ form button:hover {
 :root{
     --hauteur-menu: 60px;
 }
-  /* Pour les écrans plus larges (tablettes, ordinateurs) */
+ /* Pour les écrans plus larges (tablettes, ordinateurs) */
 @media screen and (min-width: 768px) {
     .menu-icon {
       display: none; /* Cache l'icône burger sur les grands écrans */
@@ -333,18 +442,35 @@ form button:hover {
         }
     .photo-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        padding: 20px;
+        /*padding: 20px;*/
         gap: 20px;
     }
+    
     footer {
         padding: 10px;
     }
     p {
         font-size: 20px;
     }
+    .image-scroll img {
+        width: 300px;  /* Augmenter la taille des images sur les écrans plus larges */
+        height: 200px;
+      }
+
+      figcaption {
+        font-size: 1.2em;  /* Augmenter la taille de la légende */
+      }
+      figure {
+        margin: 20px auto;
+      }
+      img {
+
+      }
+      
+    }
 
     
-}
+
 
 @media (min-width: 1024px) {
     img {
@@ -369,5 +495,21 @@ form button:hover {
         display: inline-block;
         width: 250px; /* Taille de la barre de recherche sur desktop */
         }
+        figure {
+            margin: 30px auto;
+          }
     
 }
+
+  
+  /* Media Query pour les très grands écrans (grandes résolutions de bureau) */
+  @media (min-width: 1200px) {
+    .image-scroll img {
+      width: 350px;  /* Augmenter encore plus la taille des images */
+      height: 250px;
+    }
+    figcaption {
+        font-size: 1.3em;  /* Augmenter la taille de la légende pour les grands écrans */
+        line-height: 1.8;  /* Ajuster la hauteur de ligne pour plus de lisibilité */
+      }
+  }

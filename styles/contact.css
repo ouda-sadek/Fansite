@@ -71,7 +71,9 @@ summary {
     font-size: 14px;
     border-radius: 10px;
 }
-
+main {
+    max-width: 1000px;
+}
 :root{
     --hauteur-menu: 60px;
 }
