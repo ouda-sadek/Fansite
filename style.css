@@ -121,17 +121,12 @@ main {
 }
 /*logo*/
 .container {
-  padding-bottom: 10%;
-  padding-top: 20%;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 115%;
-  height: auto;
+  height: 500px;
+  width: 500px;
 }
 .welcome h1 {
   background-image: url(images/wave.jpg);
